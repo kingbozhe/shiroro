@@ -10,7 +10,6 @@ function postData(){
     }
     var formData = new FormData();
     formData.append("file",$("#file")[0].files[0]);
-    formData.append("fileName",fileName);
     $.ajax({
         url:'/excel/receive',
         type:'post',
