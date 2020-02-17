@@ -13,6 +13,9 @@ public class PageController {
 
     @RequestMapping("/index")
     public ModelAndView indexPage() {
+        new ExcelHandle().delete("d:/shiroro/upload");
+        new ExcelHandle().fileMap.clear();
+        new ExcelHandle().fileList.clear();
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("load");
         return modelAndView;

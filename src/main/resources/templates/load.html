@@ -8,11 +8,18 @@
 
 <div class="inline">
     <div class="ititle">导入文件</div>
+    <div class="fileList"></div>
     <div class="input-group">
         <input type="file" name="file" id="file" value="">
+        是否为汇总表:<input type="checkbox" value="1" id="isTotal">
+        列名称:<input type="text" id="colName">
+        <!--编号列:<input type="text" id="idCol">-->
+        数值列:<input type="text" id="valueCol">
     </div>
-    <button onclick="postData()">上传</button>
-    <div class="zresult" id="zresult"></div>
+    <button onclick="uploadExcel()">上传</button>
+    <button onclick="clean()">清空</button>
+    <button onclick="create()">生成</button>
+
 </div>
 
 </body>
